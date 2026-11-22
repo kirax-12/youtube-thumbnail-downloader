@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Thumbnail Downloader — Ambil Thumbnail Video YouTube HD</title>
+<meta name="description" content="Download thumbnail video YouTube dalam semua ukuran: HD 1280x720 sampai 120x90. Gratis, tanpa daftar, tinggal tempel link video atau Shorts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top">YT<span>Thumb</span></a>
+  <nav class="site-nav" aria-label="Navigasi utama">
+    <a href="#ambil">Ambil Thumbnail</a>
+    <a href="#cara-pakai">Cara Pakai</a>
+  </nav>
+</header>
+<div class="tape" aria-hidden="true"><span>Thumbnail HD * 1280 × 720 * Semua Ukuran * Shorts Bisa * Gratis * Thumbnail HD * 1280 × 720 * Semua Ukuran * Shorts Bisa * Gratis *</span></div>
+
+<main id="top">
+  <section class="hero">
+    <p class="hero-kicker">Gratis · Tanpa daftar · Tanpa ribet</p>
+    <h1>Download thumbnail YouTube <span class="hl">kualitas penuh.</span></h1>
+    <p class="hero-sub">Lagi butuh gambar sampul video buat bahan edit, referensi desain, atau sekadar koleksi? Tempel link videonya — atau link <strong>Shorts</strong>-nya — terus ambil thumbnail-nya dalam <strong>semua ukuran</strong>, dari HD 1280×720 sampai yang paling kecil 120×90.</p>
+  </section>
+
+  <section id="ambil" class="panel" aria-label="Form ambil thumbnail YouTube">
+    <h2>Tempel link videonya di sini</h2>
+    <form id="thumb-form" novalidate>
+      <div class="field">
+        <label for="input-url">Link video YouTube / Shorts, atau ID video-nya aja</label>
+        <div class="input-row">
+          <input id="input-url" type="url" placeholder="https://www.youtube.com/watch?v=dQw4w9WgXcQ" autocomplete="off" spellcheck="false" inputmode="url">
+          <button class="btn btn-ghost btn-paste" id="paste-button" type="button">Tempel</button>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-download-main" id="submit-button" type="submit">Ambil Thumbnail →</button>
+      <p class="form-note">Download diusahakan langsung tersimpan sebagai file JPG. Kalau browser menolak (batasan file dari server lain), gambarnya bakal dibuka di tab baru — tinggal klik kanan lalu pilih “Simpan gambar sebagai…”.</p>
+    </form>
+    <p class="error-box" id="error-box" role="alert" hidden></p>
+  </section>
+
+  <section class="result" id="result" hidden aria-live="polite">
+    <div class="result-head">
+      <h2 class="result-heading">Pilih ukurannya</h2>
+      <p class="result-meta">ID video: <span class="video-id" id="video-id">—</span> · <a id="watch-link" href="#" target="_blank" rel="noopener">Buka videonya di YouTube ↗</a></p>
+    </div>
+    <div class="thumb-grid" id="thumb-grid"></div>
+    <p class="result-note">Ukuran HD (1280×720) cuma ada kalau kreatornya memang upload thumbnail resolusi tinggi. Kalau videonya lama atau resolusinya rendah, kartu HD bakal ditandai “tidak tersedia” — ambil ukuran terbesar yang aktif aja.</p>
+  </section>
+
+  <section id="cara-pakai" class="section">
+    <h2>Cara pakai</h2>
+    <span class="section-sub">tiga langkah, kelar ↓</span>
+    <ol class="steps">
+      <li>
+        <span class="step-num">1</span>
+        <h3>Salin link dari YouTube</h3>
+        <p>Buka videonya di YouTube, tekan tombol <strong>Bagikan</strong>, lalu pilih <strong>Salin tautan</strong>. Link Shorts dan link pendek <strong>youtu.be</strong> juga bisa.</p>
+      </li>
+      <li>
+        <span class="step-num">2</span>
+        <h3>Tempel di atas</h3>
+        <p>Tekan tombol <strong>Tempel</strong> atau paste manual ke kolom link, terus tekan <strong>Ambil Thumbnail</strong>. Semua ukuran langsung muncul sebagai kartu.</p>
+      </li>
+      <li>
+        <span class="step-num">3</span>
+        <h3>Download ukuran yang kamu mau</h3>
+        <p>Buat bahan edit biasanya yang HD. Buat preview kecil atau ikon, yang MQ atau HQ udah cukup. Klik tombol download di kartunya, beres.</p>
+      </li>
+    </ol>
+    <p class="disclaimer">Thumbnail tetap milik kreator videonya ya. Pakai buat referensi, bahan belajar, atau kebutuhan pribadi — jangan diklaim sebagai karya sendiri atau dipakai buat nipu penonton.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <p>Dibuat oleh <strong>Remike Dev</strong></p>
+    <p><a href="https://github.com/kirax-12" target="_blank" rel="noopener">github.com/kirax-12</a> · <a href="#top">Kembali ke atas ↑</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

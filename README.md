@@ -1,5 +1,7 @@
 # YouTube Thumbnail Downloader — Ambil Thumbnail Video YouTube Semua Ukuran
 
+**Demo live:** [youtube-thumbnail-downloader di GitHub Pages](https://kirax-12.github.io/youtube-thumbnail-downloader/)
+
 Web app statis buat download thumbnail video YouTube dalam **semua ukuran resmi**: dari HD 1280×720 sampai 120×90. Tinggal tempel link video (atau Shorts), pilih ukuran, klik download. Gratis, tanpa daftar, tanpa install apa-apa.
 
 Dibuat oleh **Remike Dev**.
